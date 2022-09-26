@@ -1,0 +1,24 @@
+/* MAIN - CONTACTOS */
+.contacto-titulo {
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+.btn {
+    width: 20%;
+}
+/* MEDIAS QUERIES */
+@media screen and (max-width: 480px) {
+    .contacto-titulo {
+        font-size: 25px;
+        margin-inline: auto;
+        margin-top: 10px;
+    }
+    .grid-contactos {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__titulo {
+        font-size: 15px;
+    }
+}

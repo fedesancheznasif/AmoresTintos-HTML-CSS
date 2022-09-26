@@ -1,0 +1,80 @@
+/* MAIN INICIO */
+.grid-inicio {
+    @include grid (3);
+    grid-template-rows: 100px 600px;
+    grid-template-areas: 
+        "ofertas-titulo   ofertas-titulo   ofertas-titulo"
+        "   oferta1          oferta2          oferta3";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.ofertas-titulo {
+    @extend .titulo-paginas;
+    grid-area: ofertas-titulo;
+    margin: 0;
+}
+.oferta1 {
+    grid-area: oferta1;
+}
+.oferta2 {
+    grid-area: oferta2;
+}
+.oferta3 {
+    grid-area: oferta3;
+}
+.oferta{
+    background-color: white;
+    border: 4px $morado solid;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 10px;
+    width: 90%;
+    height: 90%;
+    transition: all 1s;
+
+    &:hover {
+        width: 95%;
+        height: 95%;
+        border: 6px #e01bee solid;
+        background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    }
+    &__img {
+        width: 80%;
+    }
+    &__titulo {
+        font-size: 25px;
+    }
+    &__varietal {
+        font-size: 20px;
+    }
+    &__precio {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    &__boton {
+        background-color: $morado;
+        width: 80%;
+        padding: 15px 0;
+        display: inline-block;
+        color: white;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 15px;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .ofertas-titulo{
+        font-size: 25px;
+        margin-inline: auto;
+        margin-top: 10px;
+    }
+    .grid-inicio {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,113 @@
+/* MAIN- NUESTROS VINOS */
+.grid-nuestros-vinos {
+    @include grid (3);
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "vinos-titulo vinos-titulo  vinos-titulo"
+        "vino1            vino2       vino3"
+        "vino4            vino5       vino6"
+        "vino7            vino8       vino9"
+        "vino10           vino11      vino12"
+        "vino13           vino14      vino15";
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-evenly;
+}
+.vinos-titulo {
+    @extend .titulo-paginas;
+    grid-area: vinos-titulo;
+    margin: 0;
+}
+.vino1 {
+    grid-area: vino1;
+}
+.vino2 {
+    grid-area: vino2;
+}
+.vino3 {
+    grid-area: vino3;
+}
+.vino4 {
+    grid-area: vino4;
+}
+.vino5 {
+    grid-area: vino5;
+}
+.vino6 {
+    grid-area: vino6;
+}
+.vino7 {
+    grid-area: vino7;
+}
+.vino8 {
+    grid-area: vino8;
+}
+.vino9 {
+    grid-area: vino9;
+}
+.vino10 {
+    grid-area: vino10;
+}
+.vino11 {
+    grid-area: vino11;
+}
+.vino12 {
+    grid-area: vino12;
+}
+.vino13 {
+    grid-area: vino13;
+}
+.vino14 {
+    grid-area: vino14;
+}
+.vino15 {
+    grid-area: vino15;
+}
+.vino {
+    background-color: white;
+    border: 4px $morado solid;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 5px;
+    width: 85%;
+    height: 90%;
+    transition: all 1s;
+
+    &:hover {
+        border: #e01bee solid;
+        background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    }
+    &__img {
+        width: 60%;
+        height: 60%;
+    }
+    &__precio {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    &__boton {
+        background-color: $morado;
+        width: 80%;
+        padding: 15px 0;
+        display: inline-block;
+        color: white;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 15px;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .vinos-titulo {
+        font-size: 25px;
+        margin-inline: auto;
+        margin-top: 10px;
+    }
+    .grid-nuestros-vinos {
+        display: flex;
+        flex-direction: column;
+    }
+}

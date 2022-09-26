@@ -1,0 +1,54 @@
+/* MAIN - QUIENES SOMOS */
+.grid-sobre-nosotros {
+    @include grid (3);
+    grid-template-rows: 100px 200px 500px;
+    grid-template-areas: 
+        "sn-titulo              sn-titulo               sn-titulo"
+        "sn-parrafo             sn-parrafo              sn-parrafo"
+        "sn-multimedia-img1    sn-multimedia-video     sn-multimedia-img2";
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-evenly;
+}
+.sn-titulo {
+    @extend .titulo-paginas;
+    grid-area: sn-titulo;
+    margin: 0;
+}
+.sn-parrafo {
+    grid-area: sn-parrafo;
+    background-color: #b699b8;
+    font-size: 20px;
+    padding: 40px;
+    margin: 40px;
+    border: 4px solid $morado;
+    border-radius: 15px;
+    font-weight: bold;
+    text-align: justify;
+}
+.sn-multimedia-img1 {
+    grid-area: sn-multimedia-img1;
+}
+.sn-multimedia-video {
+    grid-area: sn-multimedia-video;
+}
+.sn-multimedia-img2 {
+    grid-area: sn-multimedia-img2;
+}
+@media screen and (max-width: 480px) {
+    .sn-titulo {
+        font-size: 25px;
+        margin-inline: auto;
+        margin-top: 10px;
+    }
+    .sn-parrafo {
+        width: 90%;
+        margin-top: 5px;
+    }
+    .grid-sobre-nosotros{
+        display: flex;
+        flex-direction: column;
+    }
+}

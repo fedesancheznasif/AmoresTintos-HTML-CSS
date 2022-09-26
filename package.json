@@ -1,0 +1,22 @@
+{
+  "name": "amores-tintos",
+  "version": "1.0.0",
+  "description": "proyecto coder",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style-scss.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedesancheznasif/Coderhouser-html-css.git"
+  },
+  "author": "federico sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fedesancheznasif/Coderhouser-html-css/issues"
+  },
+  "homepage": "https://github.com/fedesancheznasif/Coderhouser-html-css#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

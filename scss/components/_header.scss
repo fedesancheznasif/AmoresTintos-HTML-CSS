@@ -1,0 +1,46 @@
+/* NAVBAR */
+.nav-link {
+    font-size: 20px;
+}
+/* ENCABEZADO */
+.encabezado__titulo {
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+}
+.encabezado__subtitulo {
+    font-style: italic;
+    font-weight: bold;
+}
+/* CREAR CUENTA */
+.cuenta {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    &__busqueda {
+        border: 2px solid black;
+        display: inline-block;    
+    }
+    &__boton {
+        border: 2px solid black;
+        padding: 5px;
+        background-color: $morado;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .encabezado__titulo {
+        font-size: 30px;
+    }
+    .encabezado__subtitulo{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .cuenta {
+        font-size: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
