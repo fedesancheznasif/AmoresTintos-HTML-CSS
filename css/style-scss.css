@@ -118,7 +118,7 @@ main {
   grid-area: oferta3; }
 
 .oferta {
-  background-color: white;
+  background-color: #cfcfcf;
   border: 4px #930967 solid;
   border-radius: 30px;
   text-align: center;
@@ -223,7 +223,7 @@ main {
   grid-area: vino15; }
 
 .vino {
-  background-color: white;
+  background-color: #cfcfcf;
   border: 4px #930967 solid;
   border-radius: 30px;
   text-align: center;
