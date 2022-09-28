@@ -36,8 +36,7 @@
     margin-bottom: 5px; }
   .cuenta {
     font-size: 10px;
-    text-align: center;
-    margin-top: 10px; } }
+    text-align: center; } }
 
 * {
   padding: 0;
@@ -155,8 +154,7 @@ main {
 @media screen and (max-width: 480px) {
   .ofertas-titulo {
     font-size: 25px;
-    margin-inline: auto;
-    margin-top: 10px; }
+    margin-inline: auto; }
   .grid-inicio {
     display: flex;
     flex-direction: column; } }
@@ -255,8 +253,7 @@ main {
 @media screen and (max-width: 480px) {
   .vinos-titulo {
     font-size: 25px;
-    margin-inline: auto;
-    margin-top: 10px; }
+    margin-inline: auto; }
   .grid-nuestros-vinos {
     display: flex;
     flex-direction: column; } }
@@ -300,8 +297,7 @@ main {
 @media screen and (max-width: 480px) {
   .sn-titulo {
     font-size: 25px;
-    margin-inline: auto;
-    margin-top: 10px; }
+    margin-inline: auto; }
   .sn-parrafo {
     width: 90%;
     margin-top: 5px; }
@@ -315,14 +311,13 @@ main {
   font-weight: bold; }
 
 .btn {
-  width: 20%; }
+  width: 30%; }
 
 /* MEDIAS QUERIES */
 @media screen and (max-width: 480px) {
   .contacto-titulo {
     font-size: 25px;
-    margin-inline: auto;
-    margin-top: 10px; }
+    margin-inline: auto; }
   .grid-contactos {
     display: flex;
     flex-direction: column; }

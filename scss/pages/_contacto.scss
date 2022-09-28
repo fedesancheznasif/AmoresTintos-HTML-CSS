@@ -5,14 +5,13 @@
     
 }
 .btn {
-    width: 20%;
+    width: 30%;
 }
 /* MEDIAS QUERIES */
 @media screen and (max-width: 480px) {
     .contacto-titulo {
         font-size: 25px;
         margin-inline: auto;
-        margin-top: 10px;
     }
     .grid-contactos {
         display: flex;
