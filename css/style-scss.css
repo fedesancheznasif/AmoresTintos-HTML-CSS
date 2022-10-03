@@ -151,6 +151,7 @@ main {
     text-decoration: none;
     margin-bottom: 10px; }
 
+/* MEDIAS QUERIES */
 @media screen and (max-width: 480px) {
   .ofertas-titulo {
     font-size: 25px;
@@ -250,6 +251,7 @@ main {
     text-decoration: none;
     margin-bottom: 10px; }
 
+/* MEDIAS QUERIES */
 @media screen and (max-width: 480px) {
   .vinos-titulo {
     font-size: 25px;
@@ -294,6 +296,7 @@ main {
 .sn-multimedia-img2 {
   grid-area: sn-multimedia-img2; }
 
+/* MEDIAS QUERIES */
 @media screen and (max-width: 480px) {
   .sn-titulo {
     font-size: 25px;
